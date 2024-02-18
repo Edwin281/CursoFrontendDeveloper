@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .principal {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: black;
+            
+        }
+      .container {
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+      }
+      .container img:nth-child(1) {
+        width: 100%;
+        border: 1px solid white;
+      }
+        .container img:nth-child(2) {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            top: -50px;
+            border-radius: 50%;
+            border:  3px solid white;
+        
+        }
+        p{
+            color: white;
+        }
+             .user{
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: -2.5rem;
+        }
+        .description{
+            font-size: 1rem;
+          margin-top: 10px;
+        }
+        .actions {
+        margin-top: 2rem;
+        padding: 1rem;
+        width: 100%;
+        height: 3.5rem;
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 1.5rem;
+        font-weight: normal;
+      }
+      .actions div {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .influence {
+        border: 1px solid rgb(32, 32, 32);
+        margin-top: 1rem;
+        background-color: rgb(24, 24, 24);
+        height: 6.5rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .influence div {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+      }
+      .influence div:nth-child(2) {
+        border-left: 1px solid rgb(32, 32, 32);
+      }
+      .influence div p:nth-child(1) {
+        font-weight: 800;
+        font-size: 1.7rem;
+      }
+
+      .container button {
+        width: 100%;
+        height: 5.5rem;
+        background-color: rgb(0, 2, 24);
+        font-size: 1.6rem;
+        font-weight: 800;
+        color: #fff;
+        border: 0;
+      }
+      .container button:focus-visible {
+        outline: none;
+      }
+      span{
+          color: white;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="principal">
+      <main class="container">
+        <img
+          src="https://images.pexels.com/photos/10621549/pexels-photo-10621549.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          alt="Foto"
+        />
+        <img src="https://images.pexels.com/photos/2694037/pexels-photo-2694037.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+        <p class="user">Edwin Jared Bautista Roldán</p>
+        <p class="description">Fullstack Developer</p>
+        <div class="actions">
+            <div>
+              <span>Mexico</span>
+            </div>
+            <div>
+              <span>Send email</span>
+            </div>
+          </div>
+          <div class="influence">
+            <div>
+              <p>9000</p>
+              <p>Followers</p>
+            </div>
+            <div>
+              <p>3000</p>
+              <p>Following</p>
+            </div>
+          </div>
+          <button>Follow</button>
+        </div>
+      </main>
+     
+    </div>
+  </body>
+</html>
